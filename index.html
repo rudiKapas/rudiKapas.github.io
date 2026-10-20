@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ubuntu Drive Sync — a personal, locally operated Google Drive synchronization configuration using Rclone.">
+<title>Home | Ubuntu Drive Sync</title><style>
+:root{color-scheme:dark;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b1220;color:#e9eef8}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -10%,#1c3b62 0%,#0b1220 45%);min-height:100vh}
+a{color:#91caff;text-decoration:none}a:hover{text-decoration:underline}
+header,main,footer{width:min(820px,calc(100% - 40px));margin:auto}
+header{padding:34px 0 18px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{font-weight:700;color:#fff;letter-spacing:.2px}
+nav{display:flex;gap:19px;flex-wrap:wrap;font-size:14px}
+main{padding:45px 0 70px}
+.tag{display:inline-block;color:#99c4ff;background:#163253;border:1px solid #2b5687;border-radius:99px;padding:6px 12px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.1;letter-spacing:-.04em;margin:26px 0 20px}
+.lead{font-size:19px;line-height:1.7;color:#c2ccdc;max-width:740px}
+.card{border:1px solid #25364f;background:rgba(19,30,49,.88);border-radius:18px;padding:26px;margin-top:22px}
+h2{font-size:20px;margin:0 0 12px;color:#f7f9fd}
+p,li{color:#cbd5e3;line-height:1.75;font-size:15px}
+ul{padding-left:21px}strong{color:#fff}
+footer{padding:24px 0 44px;border-top:1px solid #263750;color:#a9b8cd;font-size:13px}
+.small{font-size:13px;color:#a9b8cd}
+@media(max-width:570px){header{display:block}nav{margin-top:16px}}
+</style></head>
+<body><header><a class="brand" href="/">↗ Ubuntu Drive Sync</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav></header>
+<main><span class="tag">Personal-use desktop integration</span><h1>Sync only what you choose.</h1><p class="lead">Ubuntu Drive Sync is a personal-use OAuth application for connecting a local Ubuntu computer to a Google Drive account using the open-source Rclone command-line tool.</p>
+<section class="card"><h2>What it does</h2>
+<p>The owner authorizes access to their own Google Drive account through Google's OAuth consent screen. Rclone, running on the owner's Ubuntu computer, synchronizes selected local directories with selected Google Drive folders. Other Drive folders are not automatically downloaded.</p>
+</section>
+<section class="card"><h2>How it works</h2>
+<ul><li>Google OAuth is used to obtain consent to connect a Google Drive account.</li><li>Rclone transfers selected files directly between the owner's computer and Google Drive.</li><li>The local Rclone configuration controls which folders are synchronized and when.</li></ul>
+<p><strong>Permission disclosure:</strong> The Google Drive OAuth permission technically allows broad access to Drive files; selecting a folder for synchronization limits the configured Rclone job, not the Google OAuth permission itself.</p>
+</section>
+<section class="card"><h2>Private utility — not a hosted file service</h2>
+<p>This website is an information page only. It has no sign-in form, upload form, tracking scripts, or backend that receives Drive files or Google OAuth credentials. The application is not available as a public multi-user service.</p>
+<p>Read the <a href="/privacy.html">privacy policy</a> and <a href="/terms.html">terms of use</a>.</p>
+</section></main>
+<footer>Ubuntu Drive Sync · Personal-use OAuth application · Powered locally by <a href="https://rclone.org/">Rclone</a> · <a href="https://github.com/rudiKapas/rudiKapas.github.io">Website source</a></footer></body></html>
